@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2? family= Kdam+Thmor+Pro & display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: "Kadam Thomor Pro", sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#logo:hover {
+    transform: scale(1.02);
+    object-fit: cover;
+}
+
+#banner {
+    background-image: url('./--batman-banner2022.webp');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    margin-bottom: 30px;
+} 
+  
+.actor-cards-container{
+    width:  100%;
+    display:  flex;
+    justify-content:  center;
+    margin-top:  50px;
+}
+
+.cards-content  {
+    width:  80%;
+    display:  grid;
+    grid-template-columns:repeat(3, 1fr);
+    row-gap:   20px;
+    column-gap:   40px;
+}
+    
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover; 
+    background-position: 30%  30%;
+    border-radius:  5px;
+    cursor:   pointer;
+    transition:  1s;
+    display:   flex;
+    flex-direction:  column;
+    justify-content:  flex-end;
+    padding:  0  0  30px  10px;
+    color:   #fff;
+    font-size:   19px;
+    font-family:'Kdam Thmor Pro' ,  sans-serif;
+}
+
+.banner1  {
+    background-image: url("https://i.pinimg.com/564x/4e/fd/3a/4efd3a588ec3467187e1b4f1b0116720.jpg"); 
+}
+
+.banner2  {
+    background-image: url("https://i.pinimg.com/564x/fd/be/f0/fdbef0ba70de96fd5d1819f4b7aa2518.jpg")
+}
+
+.banner3  {
+    background-image: url("https://i.pinimg.com/564x/43/e0/23/43e023d72e4d40ca820c6112f1b44aef.jpg")
+}
+
+.banner4  {
+    background-image: url("./falconebat2022.jpg");
+}
+
+.banner5 {
+    background-image: url("https://i.pinimg.com/564x/f5/79/3d/f5793d005cc712fccc6d8bd6ef8b5750.jpg");
+}
+
+.banner6 {
+    background-image: url("https://i.pinimg.com/564x/30/b5/01/30b501d70c37599ed4bb8375e16d847d.jpg");
+}
+    
+.card:hover{
+    transform: scale(1.02);
+}
+
+footer  {
+    height: 300px;
+    margin-top:  50px;
+    display:  flex;
+    flex-direction:   column;
+    align-items:    center;
+    justify-content:    space-around;
+}
+      
+span  {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+      
+.footer-navegation  {
+    display:  none;
+}
+
+.footer-liste  {
+    display:  flex;
+    flex-direction:  column;
+    align-items:  center ;
+}
+
+@media (max-width :   768px )   {
+.footer-navegation {
+   display:   block;
+}
+    
+nav {
+   display:   none;
+}
+    
+#banner{
+    background-position:   40%;
+} 
+       
+.content{
+    width:  95%;
+    display:  flex;
+    flex-direction:   column;
+}
+            
+.cards-content{
+    grid-template-columns:   1fr;
+}
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato<</title>
+    <link rel="stylesheet" href="./contatos.css"/>
+    <link rel="shortcut icon" href="./iconedosite-Batman.webp" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href='/'>
+            <img id="logo" src="./batman-logo-.jpg" alt="logo">
+        </a>
+        <nav>
+            <ul>
+                <a href='/index.html'>
+                    <li>HOME</li>
+                </a>
+                <a href='./fotos.html'>
+                    <li>FOTOS</li>
+                </a>
+                <a href='./comentario.html'>
+                    <li>COMENTARIOS</li>
+                </a>
+                <a href='./contatos.html'>
+                    <li>CONTATOS</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contato-container">
+        <div id="content">
+            <form action="formulario">
+                <h1>Contatos</h1>
+                <input type="text" id="name" name="name" placeholder="Nome" required>
+                <input type="text" id="email" name="email" placeholder="Email" required>
+                <input type="tel" id="phone" name="phone" placeholder="Telefone com DDD" required>
+                <textarea id="subject" name="subject" placeholder="Vamos conversar?" required></textarea>
+                <button class="button">ENVIAR</button>
+
+                <input type="hidden" name="redirectTo" value="obrigado.html">
+            </form>
+        </div>
+    </div>
+   
+    <footer>
+        <img style="object-fit:   cover;"  id="logo"   src="./batman-logo-.jpg"/>
+        <span>Todos os direitos reservados &copy;</span>
+        <span>Desenvolvido por: Matheus V. Silveira</span>
+    
+        <nav class="footer-navegation">
+          <ul class="footer-list">
+            <a href='./index.html'>
+            <li>Home</li>
+          </a>
+            <a href='./fotos.html'>
+            <li>Fotos</li>
+          </a>
+          <a href='./comentario.html'>
+            <li>Comentários</li>
+          </a>
+          <a href='./contatos.html'>
+            <li>Contatos</li>
+          </a>
+          </ul>
+        </nav>
+    
+    </footer>
+</body>
+</html>
